@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="podsumowanie.css" />
+    <script src="podsumowanie.js" defer></script>
+    <title>Metryczka</title>
+  </head>
+  <body>
+    <div id="main_contener">
+      <h1>Dziennik praktyki zawodowej</h1>
+      <nav>
+        <a href="metryczka.html"><button id="metryczka">Metryczka</button></a>
+        <a href="dziennik_zajec.html"
+          ><button id="dziennik_zajec">Dziennik zajęć</button></a
+        >
+        <a href="podsumowanie.html"
+          ><button id="podsumowanie">Podsumowanie</button></a
+        >
+      </nav>
+      <div id="main_contener_3">
+        <section>
+          <h2>Podaj dane do podsumowania</h2>
+          <form action="#">
+            <h2>Sprawozdanie:</h2>
+            <label for="sprawozdanie">
+              <input
+                type="text"
+                name="sprawozdanie"
+                id="sprawozdanie"
+                required
+              />
+            </label>
+            <table>
+              <tr>
+                <th>Nazwa modułu</th>
+                <th>Ocena</th>
+              </tr>
+              <tr>
+                <td class="nazwa_modulu">Moduł wstępny</td>
+                <td>
+                  <label for="ocena">
+                    <input
+                      type="number"
+                      id="ocena_1"
+                      class="ocena"
+                      min="1"
+                      max="6"
+                      required"
+                    />
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td class="nazwa_modulu">
+                  Montaż, naprawa, konserwacja i obsługa sprzętu komputerowego
+                </td>
+                <td>
+                  <label for="ocena">
+                    <input
+                      type="number"
+                      id="ocena_2"
+                      class="ocena"
+                      min="1"
+                      max="6"
+                      required
+                    />
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td class="nazwa_modulu">Systemy informatyczne</td>
+                <td>
+                  <label for="ocena">
+                    <input
+                      type="number"
+                      id="ocena_3"
+                      class="ocena"
+                      min="1"
+                      max="6"
+                      required
+                    />
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td class="nazwa_modulu">Tworzenie aplikacji internetowych</td>
+                <td>
+                  <label for="ocena">
+                    <input
+                      type="number"
+                      id="ocena_4"
+                      class="ocena"
+                      min="1"
+                      max="6"
+                      required
+                    />
+                  </label>
+                </td>
+              </tr>
+            </table>
+            <button id="button_stworz_podsumowanie">Stwórz podsumowanie</button>
+          </form>
+        </section>
+        <section id="display"></section>
+      </div>
+      <footer>
+        @Bartosz Dawid 3i
+      </footer>
+    </div>
+  </body>
+</html>

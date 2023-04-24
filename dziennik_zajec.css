@@ -1,0 +1,140 @@
+#main_contener_2 {
+  border-top: 3px dotted #fcb233;
+  margin: 15px 15px;
+}
+
+h1
+{
+  text-decoration: underline;
+}
+
+form {
+  border: 1px solid white;
+  margin: 15px 15px;
+  padding: 10px 10px;
+}
+
+fieldset
+{
+    border: 3px solid #fcb233;
+    padding: 20px;
+    margin-top: 30px
+}
+
+legend {
+  font-size: 25px;
+  text-align: left;
+}
+
+#informacje_o_zajeciach {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin: 15px 0px;
+}
+
+#informacje_o_zajeciach label {
+  font-size: 20px;
+}
+
+#informacje_o_zajeciach label input {
+  height: 25px;
+  width: 150px;
+  font-size: 20px;
+}
+
+#informacje_o_zajeciach label select * {
+  font-size: 15px;
+}
+
+#opiekun label {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  font-size: 20px;
+}
+
+#realizacja_materialu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#realizacja_materialu label {
+  margin: 20px 50px;
+  font-size: 25px;
+}
+
+#realizacja_materialu label #sprawozdanie {
+  height: 150px;
+  width: 350px;
+}
+
+#realizacja_materialu label #zrealizowano {
+  margin-top: 60px;
+}
+
+#dodaj, #wyczysc_formularz, #wyczysc_wpisy, #button_usun
+{
+    height: 50px;
+    width: 125px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #fcb233;
+    box-shadow: 0px 7px 3px 3px #666;
+    cursor: pointer;
+    border: 3px solid #c98f2a;
+    margin: 20px 10px;
+    border-radius: 15px;
+}
+
+#dodaj:active, #wyczysc_formularz:active, #wyczysc_wpisy:active, #button_usun:active
+{
+    background-color: #c79029;
+    border: 3px solid #a57624;
+    box-shadow: 0px 4px 1px 1px #444;
+    transform: translateY(3px);
+}
+
+#licznik_display p
+{
+  font-size: 35px;
+  text-align: center;
+}
+
+#wyczysc_formularz
+{
+  width: 220px;
+}
+
+#wyczysc_wpisy
+{
+  width: 180px;
+}
+
+#display
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#display div
+{
+  padding: 20px;
+  border: 3px dotted #fcb233;
+}
+
+#display p
+{
+  font-size: 25px;
+  text-align: left;
+}
+
+#stopien
+{
+  cursor: pointer;
+  color: #fcb233;
+}
