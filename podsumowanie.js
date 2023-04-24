@@ -13,17 +13,26 @@ button_stworz_podsumowanie.addEventListener("click", function (evt) {
 
   if (
     sprawozdanie.value == "" ||
-    ocena_1.value == 0 ||
-    ocena_2.value == 0 ||
-    ocena_3.value == 0 ||
-    ocena_4.value == 0
+    ocena_1.value == "" ||
+    ocena_2.value == "" ||
+    ocena_3.value == "" ||
+    ocena_4.value == ""
   ) {
     alert("Wypełnij wszystkie pola!");
+  } else if (
+    1 > ocena_1.value < 6 ||
+    1 > ocena_2.value < 6 ||
+    1 > ocena_3.value < 6 ||
+    1 > ocena_4.value < 6 ||
+    1 > ocena_5.value < 6 ||
+    1 > ocena_6.value < 6
+  ) {
+    alert("Niepoprawne wartości ocen!");
   } else {
     display.innerHTML = "";
 
     const dane = document.createElement("div");
-    dane.setAttribute("id", "div_podsumowanie")
+    dane.setAttribute("id", "div_podsumowanie");
 
     const podsumowanie_element = document.createElement("h2");
     podsumowanie_element.setAttribute("id", "podsumowanie_element");
