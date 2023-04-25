@@ -19,16 +19,8 @@ button_stworz_podsumowanie.addEventListener("click", function (evt) {
     ocena_4.value == ""
   ) {
     alert("Wypełnij wszystkie pola!");
-  } else if (
-    1 > ocena_1.value < 6 ||
-    1 > ocena_2.value < 6 ||
-    1 > ocena_3.value < 6 ||
-    1 > ocena_4.value < 6 ||
-    1 > ocena_5.value < 6 ||
-    1 > ocena_6.value < 6
-  ) {
-    alert("Niepoprawne wartości ocen!");
-  } else {
+  }
+  else {
     display.innerHTML = "";
 
     const dane = document.createElement("div");
