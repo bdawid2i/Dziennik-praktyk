@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="metryczka.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="metryczka.js" defer></script>
+    <title>Metryczka</title>
+  </head>
+  <body>
+    <div id="main_contener">
+      <h1>Dziennik praktyki zawodowej</h1>
+      <nav>
+        <a href="index.html"><button id="metryczka">Metryczka</button></a>
+        <a href="dziennik_zajec.html"
+          ><button id="dziennik_zajec">Dziennik zajęć</button></a
+        >
+        <a href="podsumowanie.html"
+          ><button id="podsumowanie">Podsumowanie</button></a
+        >
+      </nav>
+      <section id="formularz">
+        <h2>Wypełnij metryczkę</h2>
+        <form action="#">
+          <h2>Wprowadź dane ucznia</h2>
+          <div>
+            <label for="imie">
+              Imię:
+              <input type="text" id="imie"/>
+            </label>
+            <label for="nazwisko">
+              Nazwisko:
+              <input type="text" id="nazwisko"/>
+            </label>
+            <label for="klasa">
+              Klasa:
+              <input type="text" id="klasa"/>
+            </label>
+            <label for="rok_szkolny">
+              Rok szkolny:
+              <input type="text" id="rok_szkolny"/>
+            </label>
+            <label for="firma">
+              Odbytej w:
+              <input type="text" id="firma"/>
+            </label>
+          </div>
+          <fieldset>
+            <legend>Czas trwania praktyki</legend>
+            <label for="data_rozpoczecia">
+              Data rozpoczęcia:
+              <input type="date" id="data_rozpoczecia"/>
+            </label>
+            <label for="data_zakonczenia">
+              Data zakończenia:
+              <input type="date" id="data_zakonczenia"/>
+            </label>
+          </fieldset>
+          <button id="zatwierdz">Zatwierdź</button>
+        </form>
+      </section>
+      <section id="display" class="hidden"></section>
+      <div id="button_panel" class="hidden">
+        <button id="edit">Edytuj</button>
+      </div>
+      <footer>
+        @Bartosz Dawid 3i
+      </footer>
+    </div>
+  </body>
+</html>
